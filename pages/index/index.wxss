@@ -1,0 +1,68 @@
+/**index.wxss**/
+page{
+  background-color:  rgba(239, 239, 242, 0.733);
+}
+swiper{
+  width: 100%;
+  height:300rpx
+}
+swiper-item{
+  width: 100%;
+  height: 100%;
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+.timenow{
+  /* background-color: white; */
+ 
+  text-align:  center;
+  font-size: 30rpx;
+  color: grey;
+  padding-bottom: 5rpx;
+  /* border-radius: 16rpx; */
+}
+.table{
+  margin-top: 10rpx ;
+  margin-bottom: 10rpx ;
+  background-color: white;
+  padding: 15rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: black;
+  border-top: 1rpx solid #0094ff;
+  border-bottom: 1rpx solid #0094ff;
+  border-radius: 15rpx;
+line-height: 50rpx;
+}
+.course_name{
+  margin-top: 15rpx ;
+  background-color: white;
+  padding: 10rpx;
+  font-size: 35rpx;
+  color: black;
+  border-top: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+  line-height: 50rpx;
+}
+.course_det{
+  margin-top: 5rpx ;
+  background-color: white;
+  padding: 10rpx;
+  font-size: 35rpx;
+  color: black;
+  border-radius: 15rpx;
+  line-height: 50rpx;
+}
+.course_detail{
+  margin-top: 5rpx ;
+  background-color: white;
+  padding: 10rpx;
+  font-size: 33rpx;
+  color: blue;
+  text-align: center;
+  border-radius: 15rpx;
+  border-bottom: 1rpx solid #0095ff5e;
+  line-height: 50rpx;
+}

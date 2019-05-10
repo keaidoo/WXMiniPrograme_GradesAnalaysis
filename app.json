@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/datatest/datatest",
+    "pages/Analysis/Analysis",
+    "pages/AnswerDet/AnswerDet",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/ExamPage/ExamPage",
+    "pages/ReplaceQuestion/ReplaceQuestion",
+    
+    "pages/CourseDet/CourseDet"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "软件学院课程能力点分析",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#0094ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home_blue.png"
+      },
+      {
+        "pagePath": "pages/Analysis/Analysis",
+        "text": "分析",
+        "iconPath": "image/course.png",
+        "selectedIconPath": "image/course_blue.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/self.png",
+        "selectedIconPath": "image/self_blue.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

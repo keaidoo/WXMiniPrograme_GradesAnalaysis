@@ -1,0 +1,112 @@
+/* pages/AnswerDet/AnswerDet.wxss */
+
+page {
+  background-color: rgba(239, 239, 242, 0.733);
+}
+.correct_rate{
+  margin-top:16rpx;
+   margin-bottom:16rpx;
+}
+/* 试卷名称 */
+.page_name{
+  margin-top: 10rpx ;
+  margin-bottom: 10rpx ;
+  background-color: white;
+  padding: 12rpx;
+  text-align: center;
+  vertical-align: center;
+  font-size: 35rpx;
+  color: black;
+  border-top: 1rpx solid #0094ff;
+  border-bottom: 1rpx solid #0094ff;
+  border-radius: 15rpx;
+   line-height: 60rpx;
+}
+/* 成绩滚动列表  */
+
+.contentBottom {
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border-top: 1rpx solid #0095ff5e;
+  border-bottom: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+}
+
+.BottomFirst {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #0095ff5e;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.BottomFirst text {
+  width: 100%;
+  text-align: center;
+  font-size: 33rpx;
+  color: #663a83;
+  line-height: 60rpx;
+  border-right: 1px dashed #0095ff5e;
+  box-sizing: border-box;
+}
+
+.BottomFirst text:nth-child(1) {
+  border: none;
+}
+
+.tab-right {
+  width: 90%;
+  margin: 20rpx auto;
+  height: 365rpx;
+}
+
+.right-item {
+  padding: 0 20rpx;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content-item {
+  height: 80rpx;
+  border-bottom: 1px dashed #0095ff5e;
+  width: 95%;
+}
+
+.avater {
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 100rpx;
+  margin-top: 25rpx;
+  float: left;
+}
+
+.name {
+  font-size: 26rpx;
+  float: left;
+  line-height: 80rpx;
+  color: #663a83;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.num {
+  font-size: 26rpx;
+  float: left;
+  line-height: 80rpx;
+  color: #663a83;
+}
+
+.wawa {
+  font-size: 26rpx;
+  float: right;
+  line-height: 80rpx;
+  color: #663a83;
+  margin-right: 15rpx;
+}

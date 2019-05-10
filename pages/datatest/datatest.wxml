@@ -1,0 +1,22 @@
+<!--pages/datatest/datatest.wxml-->
+<text>pages/datatest/datatest.wxml</text>
+<view class="data">展示数据</view>
+<view wx:for="{{list}}" wx:key="list">
+<view class='course_name'>课程名称：{{item[0].course.courseName}}</view>
+<view wx:for="{{item}}" wx:for-item="sub">
+  <view class='course_det'>上课时间：星期{{sub.weekdayNum}}（{{sub.time}}）</view>
+  <view class='course_det'>上课地点：{{sub.place}}</view>
+</view>
+<view></view>
+  <!-- <view class='course_det'>上课时间：星期{{item.weekdayNum}}（{{item.time}}）</view>
+  <view class='course_det'>上课地点：{{item.place}}</view> -->
+
+</view>
+
+
+<!-- <view class='class_table' wx:for="{{list}}" wx:key="list">
+  <view class='course_name'>课程名称：{{item.course.courseName}}</view>
+  <view class='course_det'>上课时间：星期{{item.weekdayNum}}（{{item.time}}）</view>
+  <view class='course_det'>上课地点：{{item.place}}</view>
+  <navigator class='course_detail' url='../CourseDet/CourseDet' open-type='navigate' bindtap='Jump'  data-id='{{course.id}}' >课程详情</navigator>
+</view> -->

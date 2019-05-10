@@ -1,0 +1,52 @@
+/* pages/my/my.wxss */
+
+page {
+  background-color: rgba(239, 239, 242, 0.733);
+}
+
+/* 轮播图 */
+
+swiper {
+  width: 100%;
+  height: 300rpx;
+}
+
+swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 个人信息 */
+
+.information-title {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: white;
+  padding: 15rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: black;
+  border-top: 1rpx solid #0095ff5e;
+  border-bottom: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+  line-height: 50rpx;
+}
+
+.information-item {
+  
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: white;
+  padding:15rpx 55rpx;
+  font-size: 33rpx;
+  border-bottom: 1rpx solid #0095ff5e;
+  line-height: 50rpx;
+}
+#teacher_intro{
+  height: 200rpx;
+}

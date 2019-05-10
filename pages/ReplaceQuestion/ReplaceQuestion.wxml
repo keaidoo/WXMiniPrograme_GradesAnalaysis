@@ -1,0 +1,28 @@
+<!--pages/ReplaceQuestion/ReplaceQuestion.wxml-->
+<!-- 课程名 -->
+<view class='title'>
+  <view class='course_name'>
+    课程名：C语言{{item.course_name}}
+  </view>
+  <view class='page_name'>试卷名：C语言考试试卷{{course_name}}</view>
+</view>
+<!-- 试卷题号 -->
+
+
+
+<view class="itemView">试卷题号：
+ <input class="input" name="qNum" placeholder="请输入试卷题号" bindinput="qNumInput" />
+</view>
+<view class="itemView">题目内容：
+  <textarea class="input" name="qContent" placeholder="请输入题目内容" bindinput="qContentInput"></textarea>
+</view>
+
+<view class="itemView">题目涉及的知识点：
+  <textarea class="input" name="qPoint" placeholder="请输入题目涉及的知识点" bindinput="qPointInput"></textarea>
+</view>
+<view class="viewName">
+  <button class="changeBtn" bindtap="changeClick">替换</button>
+</view>
+
+
+<!-- 搜索 -->

@@ -1,0 +1,106 @@
+/* pages/ExamPage/ExamPage.wxss */
+
+page {
+  background-color: rgba(239, 239, 242, 0.733);
+}
+
+/* 名称 */
+
+.title {
+  margin-top: 10rpx;
+  margin-bottom: 0rpx;
+  background-color: white;
+  padding: 12rpx;
+  padding-bottom: 0rpx;
+  text-align: center;
+  vertical-align: center;
+  font-size: 33rpx;
+  color: black;
+  border-top: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+  line-height: 60rpx;
+}
+
+.course_name {
+}
+
+.page_name {
+  color: gray;
+}
+/* 替换试题 */
+.replace {
+  margin-bottom: 10rpx;
+  background-color: white;
+  font-size: 33rpx;
+  color: blue;
+  text-align: right;
+  border-radius: 15rpx;
+  border-bottom: 1rpx solid #0095ff5e;
+  line-height: 50rpx;
+}
+
+/* 试卷滚动列表  */
+
+.contentBottom {
+  padding: 20rpx 0;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border-top: 1rpx solid #0095ff5e;
+  border-bottom: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+}
+
+.BottomFirst {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rpx solid #0095ff5e;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.BottomFirst text {
+  width: 100%;
+  text-align: center;
+  font-size: 33rpx;
+  color:  rgba(0, 0, 0, 0.856);
+  border-right: 1rpx dashed #0095ff5e;
+  box-sizing: border-box;
+}
+
+.BottomFirst text:nth-child(1) {
+  border: none;
+}
+
+.tab-right {
+  width: 90%;
+  margin: 20rpx auto;
+  height: 840rpx;
+}
+
+.right-item {
+  padding: 0 20rpx;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content-item {
+  /* border-top: 1rpx dashed #0095ff5e; */
+  border-bottom: 1rpx dashed #0095ff5e;
+  width: 95%;
+  vertical-align: center;
+}
+
+.name {
+  font-size: 26rpx;
+  float: left;
+  line-height: 40rpx;
+  color: #000000c9;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+

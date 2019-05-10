@@ -1,0 +1,3 @@
+<!--components/myhead/myhead.wxml-->
+<text>components/myhead/myhead.wxml</text>
+<view class='myhead'>{{cData}}</view>

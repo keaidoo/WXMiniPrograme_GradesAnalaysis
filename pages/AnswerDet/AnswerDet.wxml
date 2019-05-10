@@ -1,0 +1,52 @@
+<!--pages/AnswerDet/AnswerDet.wxml-->
+
+  <!-- 试卷名称 -->
+  <view class='page_name'>试卷名称：C语言{{course_name}}</view>
+
+  <!--答题正确率60%以下的题目-->
+  <!-- <view class='lower60'>
+    <view class='title'>答题正确率60%以下的题目</view>
+    <view class='qdet question_num'>题号：</view>
+    <view class='qdet question_num'>正确率：</view>
+  </view> -->
+ <!--答题正确率60%以下的题目-->
+  <view class='contentBottom correct_rate'>
+  <view class='BottomFirst'>
+    <text id='0' data-id='0'>答题正确率60%以下的题目</text>
+  </view>
+  <swiper class="tab-right" style='background:{{bgColor}};' vertical="true" interval="2000" display-multiple-items='4'>
+    <view class="right-item">
+      <block wx:for-index="idx" wx:for='{{a1}}'>
+        <swiper-item>
+          <view class='content-item'>
+            <image src='{{item.avatarUrl}}' class='avater'></image>
+            <text class='name'>题号：{{item.Question_num}}</text>
+            <text class='wawa'>正确率：{{item.corret_rate}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </view>
+  </swiper>
+</view>
+
+  <!--学生分数详情-->
+<view class='contentBottom'>
+  <view class='BottomFirst'>
+    <text id='0' data-id='0'>成绩列表</text>
+  </view>
+  <swiper class="tab-right" style='background:{{bgColor}};' vertical="true" interval="2000" display-multiple-items='4'>
+    <view class="right-item">
+      <block wx:for-index="idx" wx:for='{{aa}}'>
+        <swiper-item>
+          <view class='content-item'>
+            <image src='{{item.avatarUrl}}' class='avater'></image>
+            <text class='name'>{{item.nickName}}</text>
+            <text class='num'>{{item.studentnum}}</text>
+            <text class='wawa'>成绩：{{item.reward}}分</text>
+          </view>
+        </swiper-item>
+      </block>
+    </view>
+  </swiper>
+
+</view>

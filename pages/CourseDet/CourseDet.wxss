@@ -1,0 +1,36 @@
+/* pages/CourseDet/CourseDet.wxss */
+page{
+  background-color:  rgba(239, 239, 242, 0.733);
+}
+
+.course_name{
+  margin-top: 10rpx ;
+  margin-bottom: 10rpx ;
+  background-color: white;
+  padding: 12rpx;
+  text-align: center;
+  vertical-align: center;
+  font-size: 35rpx;
+  color: blue;
+  border-top: 1rpx solid #0094ff;
+  border-bottom: 1rpx solid #0094ff;
+  border-radius: 15rpx;
+   line-height: 60rpx;
+}
+.course_det{
+ 
+  margin-top: 15rpx ;
+  background-color: white;
+  padding: 15rpx;
+  font-size: 35rpx;
+  color: black;
+  border-bottom: 1rpx solid #0095ff5e;
+  line-height: 60rpx;
+}
+image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: text-bottom;
+  text-align: left;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,57 @@
+/* pages/ReplaceQuestion/ReplaceQuestion.wxss */
+
+page {
+  background-color: rgba(239, 239, 242, 0.733);
+}
+
+/* 名称 */
+
+.title {
+  margin-top: 10rpx;
+  margin-bottom: 0rpx;
+  background-color: white;
+  padding: 12rpx;
+  padding-bottom: 0rpx;
+  text-align: center;
+  vertical-align: center;
+  font-size: 33rpx;
+  color: black;
+  border-top: 1rpx solid #0095ff5e;
+  border-bottom: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+  line-height: 60rpx;
+}
+
+.page_name {
+  color: gray;
+}
+
+.itemView {
+  padding: 10rpx;
+  background-color: white;
+  margin: 20rpx;
+  border-top: 1rpx solid #0095ff5e;
+  border-bottom: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+  text-align: left;
+  font-size: 33rpx;
+  line-height: 40rpx;
+}
+
+.input {
+  border: 1px solid white;
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+.viewName {
+  margin: 20rpx;
+  background-color: white;
+}
+
+.loginBtn {
+  background-color: white;
+  border: 1rpx solid 0095ff5e;
+}
+
+/* 搜索 */

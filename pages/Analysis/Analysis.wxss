@@ -1,0 +1,82 @@
+/* pages/Analysis/Analysis.wxss */
+
+/* 全局页面 */
+
+page {
+  background-color: rgba(239, 239, 242, 0.733);
+}
+
+/* 课程名称 */
+
+.c_name {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: white;
+  padding: 15rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: black;
+  border-top: 1rpx solid #0095ff5e;
+  border-bottom: 1rpx solid #0095ff5e;
+  border-radius: 15rpx;
+  line-height: 50rpx;
+}
+
+/* 查看试卷 */
+
+.watch_test {
+  color: blue;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+/* 试卷分析结果 */
+
+.analysis_exam {
+  
+    margin-top: 5rpx;
+  background-color: white;
+  padding: 10rpx;
+  font-size: 33rpx;
+  color: black;
+  border-radius: 15rpx;
+  border-bottom: 1rpx solid #0095ff5e;
+  line-height: 50rpx;
+}
+
+.analysis_sum {
+  text-align: center;
+  font-size: 35rpx;
+  border-bottom: 1rpx dashed #0095ff2c ;
+}
+
+/* 成绩分析 */
+
+.analysis_grade {
+  margin-top: 10rpx;
+  background-color: white;
+  padding: 10rpx;
+  font-size: 33rpx;
+  color: black;
+  border-radius: 15rpx;
+  border-bottom: 1rpx solid #0095ff5e;
+  line-height: 50rpx;
+}
+
+.Answer_Det {
+  color: blue;
+  text-align: center;
+  font-size: 30rpx;
+}
+.analy_det{
+ border-bottom: 1rpx  dashed #575b5e1f;
+ padding: 7rpx;
+}
+image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: text-bottom;
+  text-align: left;
+  margin-right: 10rpx;
+  
+}

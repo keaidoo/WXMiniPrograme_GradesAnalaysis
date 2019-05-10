@@ -1,0 +1,29 @@
+<!--pages/ExamPage/ExamPage.wxml-->
+<view class='title'>
+  <view class='course_name'>
+    课程名：C语言{{item.course_name}}
+  </view>
+  <view class='page_name'>试卷名：C语言考试试卷{{course_name}}</view>
+  <navigator class='replace' url='../ReplaceQuestion/ReplaceQuestion' open-type='navigate'>替换试题</navigator>
+</view>
+
+<!--试卷页面详情-->
+<view class='contentBottom'>
+  <view class='BottomFirst'>
+    <text id='0' data-id='0'>试题详情</text>
+  </view>
+  <swiper class="tab-right" style='background:{{bgColor}};' vertical="true" interval="2000" display-multiple-items='3'>
+    <view class="right-item">
+      <block wx:for-index="idx" wx:for='{{aa}}'>
+        <swiper-item>
+          <view class='content-item'>
+            <view class='name'>{{item.question}}</view>
+            <view class='name'>【考查知识点：{{item.point}}】({{item.score}}分)</view>
+          </view>
+          
+        </swiper-item>
+      </block>
+    </view>
+  </swiper>
+</view>
+

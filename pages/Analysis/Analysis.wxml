@@ -1,0 +1,42 @@
+<!--pages/Analysis/Analysis.wxml-->
+<view class='course-wrap'>
+  <!-- 课程名称 -->
+  <view class='c_name'>
+    <view class='course_name'>课程名称：C语言{{course_name}}</view>
+  </view>
+  <view class='analysis'>
+    <!--试卷分析-->
+    <view class='analysis_exam'>
+      <view class='analysis_sum'>
+        <image src='../../image/pink.jpg'></image>试卷分析结果</view>
+      <view class='point analy_det'>
+        <image src='../../image/point3.png'></image>未覆盖的知识点
+        <view>1.1函数{{point}}</view>
+      </view>
+      <view class='point analy_det'>
+        <image src='../../image/point2.png'></image>课程知识点覆盖百分比
+        <view>1.1函数{{point}}</view>
+      </view>
+      <view class='point analy_det'>
+        <image src='../../image/point4.png'></image>章节涉及题目数量
+        <view>1.1函数{{point}}</view>
+      </view>
+      <navigator url='../ExamPage/ExamPage' open-type='navigate' class='watch_test'>查看试卷</navigator>
+    </view>
+    <!--成绩分析-->
+    <view class='analysis_grade'>
+      <view class='analysis_sum'>
+        <image src='../../image/pink.jpg'></image>学生成绩分析</view>
+      <view class='average analy_det'>
+        <image src='../../image/star2.png'></image>试卷平均分</view>
+      <view class='level_A analy_det'>
+        <image src='../../image/star4.png'></image>优秀</view>
+      <view class='level_B analy_det'>
+        <image src='../../image/star5.png'></image>良好</view>
+      <view class='level_C analy_det'>
+        <image src='../../image/star3.png'></image>不及格</view>
+
+      <navigator url='../AnswerDet/AnswerDet' open-type='navigate' class='Answer_Det'>答题详情</navigator>
+    </view>
+  </view>
+</view>
