@@ -24,8 +24,9 @@ Page({
     });
    //获取数据
     var that = this
+    var appInstance = getApp()
     wx.request({
-      url: 'http://47.100.229.168:8080/stu/teacher/courses/1',
+      url: 'http://47.100.229.168:8080/stu/teacher/courses/' + appInstance.globalData.userInfo.id,
       headers: {
         'Content-Type': 'application/json'
       },

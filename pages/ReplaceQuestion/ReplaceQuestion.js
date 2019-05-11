@@ -36,6 +36,33 @@ Page({
   //获取用户输入
   changeClick: function (e) {
     console.log("题号：" + this.data.qNum + " 题目内容：" + this.data.qContent + " 题目涉及的知识点："+ this.data.qPoint);
+    wx.request({
+      url: 'http://47.100.229.168:8080/stu/question/replace/'+this.data.paperId,
+      method: 'POST',
+      data: {
+        questionNumber: this.data.qNum,
+        question: this.data.qContent,
+        points: this.data.qPoint
+      },
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        if (res.data === "failed") {
+          wx.showToast({
+            title: '替换出错！',
+            icon: 'none',
+            duration: 2000
+          })
+        } else {
+          wx.showToast({
+            title: '替换成功',
+            icon: 'success',
+            duration: 2000
+          })
+        }
+      }
+    })
   },
 //搜索
 
@@ -47,7 +74,11 @@ Page({
    */
   onLoad: function (options) {
 
-    
+    this.setData({
+      paperId: options.paper_id,
+      courseName:options.course_name,
+      paperName:options.paper_name
+    })
   },
 
   /**

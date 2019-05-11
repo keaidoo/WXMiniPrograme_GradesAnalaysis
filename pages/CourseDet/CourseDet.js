@@ -12,20 +12,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options.course_id)
     //获取数据
  
     var that = this
     wx.request({
-      url: 'http://47.100.229.168:8080/stu/teacher/courses/1',
+      url: 'http://47.100.229.168:8080/stu/course/' + options.course_id+'/chapters',
       headers: {
         'Content-Type': 'application/json'
       },
       success: function (res) {
-        //将获取到的json数据，存在名字叫list的这个数组中
-        //console.log(res.data)
+        console.log(res.data)
         that.setData({
-          list: res.data,
-          //res代表success函数的事件对，data是固定的，list是数组
+          chapters: res.data,
+          course_name: options.course_name,
+          course_description: options.course_description,
+          course_id: options.course_id,
         })
       }
     })
